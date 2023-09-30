@@ -1,9 +1,9 @@
 public class CountOnesInNumber {
 
-
 	public static void main(String[] args) {
 
 		int number = 25; // input number 00011001
+		int initialNumber = number;
 		int count = 0;
 
 		while(number != 0) {
@@ -13,6 +13,6 @@ public class CountOnesInNumber {
 			number >>= 1; // shift the number to check the next bit, so the last bit will be lost
 		}
 
-		System.out.println("Number of '1' bits in number[" + number + "] = [" + count + "]");
+		System.out.println("Number of '1' bits in number[" + initialNumber + "] = [" + count + "]");
 	}
 }
